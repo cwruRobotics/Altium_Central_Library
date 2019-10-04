@@ -2,7 +2,7 @@
 Version=1.1
 [DatabaseLinks]
 ConnectionString=Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Altium\Library\Components\DB.xlsx;Extended Properties="Excel 12.0 Xml;HDR=Yes;IMEX=1"
-AddMode=3
+AddMode=2
 RemoveMode=1
 UpdateMode=2
 ViewMode=0
@@ -19,13 +19,16 @@ LibrarySearchPath=Models\PCB Components;Models\SCH Symbols
 OrcadMultiValueDelimiter=,
 SearchSubDirectories=0
 SchemaName=
-LastFocusedTable=Connectors$
+LastFocusedTable=Analog$
 [Table1]
 SchemaName=
 TableName=Analog$
 Enabled=False
 UserWhere=0
-UserWhereText=
+UserWhereText=[Part Number] = '{Part Number}'
+BrowserOrder_Sorting=
+BrowserOrder_Grouping=
+BrowserOrder_Visible=Part Number0=104|Description0=382|Footprint Ref0=105|Library Ref0=102|Manufacturer0=108|Manufacturer PN0=139|Cost0=53
 [Table2]
 SchemaName=
 TableName=Capacitors$
@@ -38,9 +41,6 @@ TableName=Connectors$
 Enabled=False
 UserWhere=0
 UserWhereText=
-BrowserOrder_Sorting=
-BrowserOrder_Grouping=
-BrowserOrder_Visible=Part Number0=87|Description0=109|Type0=82|Positions per level0=116|Levels0=53|Current0=62|Manufacturer0=93|Manufacturer PN0=110|Footprint Ref0=101|Library Ref0=77
 [Table4]
 SchemaName=
 TableName=Diodes$
@@ -110,18 +110,10 @@ Options=FieldName=Analog$.Footprint Ref|TableNameOnly=Analog$|FieldNameOnly=Foot
 [FieldMap4]
 Options=FieldName=Analog$.Library Ref|TableNameOnly=Analog$|FieldNameOnly=Library Ref|FieldType=1|ParameterName=[Library Ref]|VisibleOnAdd=False|AddMode=0|RemoveMode=0|UpdateMode=0
 [FieldMap5]
-Options=FieldName=Connectors$.Part Number|TableNameOnly=Connectors$|FieldNameOnly=Part Number|FieldType=0|ParameterName=Part Number|VisibleOnAdd=False|AddMode=0|RemoveMode=0|UpdateMode=0
-[FieldMap6]
-Options=FieldName=Connectors$.Description|TableNameOnly=Connectors$|FieldNameOnly=Description|FieldType=1|ParameterName=[Description]|VisibleOnAdd=False|AddMode=0|RemoveMode=0|UpdateMode=0
-[FieldMap7]
-Options=FieldName=Connectors$.Footprint Ref|TableNameOnly=Connectors$|FieldNameOnly=Footprint Ref|FieldType=1|ParameterName=[Footprint Ref]|VisibleOnAdd=False|AddMode=0|RemoveMode=0|UpdateMode=0
-[FieldMap8]
-Options=FieldName=Connectors$.Library Ref|TableNameOnly=Connectors$|FieldNameOnly=Library Ref|FieldType=1|ParameterName=[Library Ref]|VisibleOnAdd=False|AddMode=0|RemoveMode=0|UpdateMode=0
-[FieldMap9]
 Options=FieldName=Diodes$.Part Number|TableNameOnly=Diodes$|FieldNameOnly=Part Number|FieldType=0|ParameterName=Part Number|VisibleOnAdd=False|AddMode=0|RemoveMode=0|UpdateMode=0
-[FieldMap10]
+[FieldMap6]
 Options=FieldName=Diodes$.Description|TableNameOnly=Diodes$|FieldNameOnly=Description|FieldType=1|ParameterName=[Description]|VisibleOnAdd=False|AddMode=0|RemoveMode=0|UpdateMode=0
-[FieldMap11]
+[FieldMap7]
 Options=FieldName=Diodes$.Footprint Ref|TableNameOnly=Diodes$|FieldNameOnly=Footprint Ref|FieldType=1|ParameterName=[Footprint Ref]|VisibleOnAdd=False|AddMode=0|RemoveMode=0|UpdateMode=0
-[FieldMap12]
+[FieldMap8]
 Options=FieldName=Diodes$.Library Ref|TableNameOnly=Diodes$|FieldNameOnly=Library Ref|FieldType=1|ParameterName=[Library Ref]|VisibleOnAdd=False|AddMode=0|RemoveMode=0|UpdateMode=0
